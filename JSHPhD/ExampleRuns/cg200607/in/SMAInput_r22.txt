@@ -1,0 +1,32 @@
+**Soil Moisture Accounting (SMA) Input File**
+NUZ 1
+NLZ 1
+NIO 2
+IO_NUMBER INTFOUT_I INTFOUT_J
+1          14        1 
+2          24        1 
+LZ_NUMBER TWC TWM PBASE ZPERC REXP PFREE SAVED NPARTS
+1         20  40  2.8   85.00 1.20 0.30  0.010 2
+LZ_NUMBER NPART_NUMBER KPART FWC   FWM    K
+1         1            0.5   0.0   3.00   0.040
+LZ_NUMBER	NPART_NUMBER NIO_NUMBER	KBASF
+1	1	1	0.25
+1	1	2	0.75
+LZ_NUMBER NPART_NUMBER KPART FWC   FWM    K
+1         2            0.5   3.0   10.00  0.0005
+LZ_NUMBER	NPART_NUMBER NIO_NUMBER	KBASF
+1	2	1	0.25
+1	2	2	0.75
+UZ_NUMBER	TWC	TWM	NPARTS
+1          0.2  3.0 1
+UZ_NUMBER NPART_NUMBER KPART FWC   FWM    K
+1         1            1.0   0.0   1.0    0.2
+UZ_NUMBER  NPART_NUMBER  KINTF
+1          1             0.5
+1          2             0.5
+UZ_NUMBER  NLZ_NUMBER  KPERC
+1          1           1.0
+UZ_NUMBER SMAKUZFILE
+1         in/SMAUZK_UZ1.asc
+SMASTATESFILE out/export/SMA/SMAStates_r22.txt   
+SMAREPORTINGINTERVAL 0.05
