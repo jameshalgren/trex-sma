@@ -1,0 +1,8 @@
+*
+!chem/
+!flow/
+!sedtran/
+!infiltration/
+!rain/
+!.gitignore
+# See SO solution here: https://stackoverflow.com/a/5581995
